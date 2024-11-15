@@ -1,0 +1,58 @@
+.car-detail-container {
+    padding: 5px 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .car-detail-container .car-details-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .car-detail-container .car-details-header .actions{
+    display: flex;
+    gap: 10px;
+  }
+  .car-detail-container .car-details-header .actions button{
+    padding: 5px 10px;
+    cursor: pointer;
+
+  }
+  .car-detail-container .car-details-header .actions .update{
+    background-color: rgb(43, 231, 43);
+    border: 0;
+    color:  black
+  }
+  .car-detail-container .car-details-header .actions .delete{
+    background-color: red;
+    border: 0;
+  }
+  .car-detail-container  .car-images{
+    display: flex;
+    gap: 20px;
+   flex-wrap: wrap;
+  }
+  .car-detail-container  .car-images img{
+    width: 200px;
+  }
+  .sub-details{
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 800px; */
+    background-color: rgb(240, 240, 245);
+    border: 1px solid rgb(46, 41, 41);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  /* .sub-details:nth-child(1){
+    border-top: 2px solid  rgb(46, 41, 41);
+  }
+  .sub-details:last-child{
+    border-bottom: 2px solid  rgb(46, 41, 41);
+  } */
+  .additional-details{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  

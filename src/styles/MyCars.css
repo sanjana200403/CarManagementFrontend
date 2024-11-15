@@ -1,0 +1,57 @@
+
+.my-cars{
+    padding: 5px 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.my-cars-card{
+   display: flex;
+   background-color: rgb(231, 231, 238);
+   gap: 10px;
+   height: 220px;
+   max-width: 900px;
+   width: 100%;
+
+   border-radius: 10px;
+
+}
+.my-cars-card img{
+    width: 50%;
+    border-radius: 20px;
+}
+.card-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.card-details p{
+    color: rgb(60, 43, 43);
+}
+.card-details button{
+    background-color: blue;
+    color: white;
+    padding: 5px 0;
+    border: 0;
+    width: 100px;
+}
+ @media (max-width: 748px) { 
+    .my-cars-card{
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .my-cars-card img{
+        width: 100% ;
+        max-height: 200px;
+    }
+
+
+  }

@@ -1,0 +1,164 @@
+.header {
+    background: linear-gradient(135deg, #232526, #414345), #232526;
+    background-image: url('https://www.shutterstock.com/image-illustration/black-modern-car-headlights-front-600nw-771184300.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.search-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.search-form input, .search-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.search-form input {
+    /* flex: 1 1 200px; */
+    /* width: 60%; */
+    max-width: 700px;
+}
+
+.search-form button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #2980b9;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.recommend-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recommend-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.car-cards{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+.car-card {
+    width: 250px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+  .car-card  a{
+    text-decoration: none;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .car-details {
+    /* padding-top: 10px; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    text-decoration: none;
+    font-size: 12px;
+
+  }
+  .car-details  h3{
+    text-decoration: none;
+  }
+  .car-name {
+    font-size: 1.2em;
+    color: #333;
+    margin: 8px 0 5px;
+    font-weight: bold;
+  }
+  
+  .car-price {
+    font-size: 1em;
+    color: #555;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form input, .search-form button {
+        max-width: 100%;
+    }
+
+    .car-cards {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+    }
+
+    .recommend-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .car-card {
+        width: 100%;
+    }
+}
